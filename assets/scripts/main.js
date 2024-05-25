@@ -52,7 +52,7 @@ function initializeServiceWorker() {
   // B3. TODO - Register './sw.js' as a service worker (The MDN article
   //            "Using Service Workers" will help you here)
         try {
-          const registration = await navigator.serviceWorker.register("/sw.js", {
+          const registration = await navigator.serviceWorker.register("./sp24-cse110-lab8/sw.js", {
             scope: "/",
           });
           if (registration.installing) {
